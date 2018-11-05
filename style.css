@@ -11,7 +11,8 @@ button {
 }
 
 #calc {
-  margin: 30px 25% 0px 25%;
+  margin: 50px auto;
+  width: 350px;
   border-width: 2px;
   border-style: outset;
   background-color: #c6c6c6;
@@ -21,6 +22,7 @@ button {
   background-color: #000099;
   color: #FFFFFF; 
   font-weight: bold;
+  padding-left: 1px;
 }
 
 #calcBod {
@@ -28,7 +30,22 @@ button {
   padding: 10px 10px 10px 10px;
 }
 
+.message,
+.tipTitle,
+.tip,
 #output {
   text-align: center;
 
+}
+.message {
+  padding: 25px;
+}
+
+.tipTitle {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.tip {
+  font-size: 1.75em;
 }

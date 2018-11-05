@@ -4,10 +4,9 @@
     <title>JavaScript Tip Calculator</title>
     <script src="jquery.js"></script>
     <script src="calculations.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <script src="index.js"></script>
     <div id="calc">
       <div id="calcTitle">
         JavaScript Tip Calculator
@@ -19,24 +18,22 @@
           <br><br>
           How was your service?
           <br><br>
-          <select name="score">
+          <select id="selectRating">
             <option value="" disabled selected>-- Choose an Option --</option>
-            <option value="Outstanding">30% - Outstanding</option>
-            <option value="Good">20% - Good</option>
-            <option value="OK">15% - It was OK</option>
-            <option value="Bad">10% - Bad</option>
-            <option value="Terrible">5% - Terrible</option>
+            <option value="0.30">30% - Outstanding</option>
+            <option value="0.20">20% - Good</option>
+            <option value="0.15">15% - It was OK</option>
+            <option value="0.10">10% - Bad</option>
+            <option value="0.05">5% - Terrible</option>
           </select>
           <br><br>
           How many people are sharing the bill?
           <br><br>
           <input type="text" id="textBoxNumPeople" placeholder="Number of People"> people
           <br><br>
-          <button type="button" onClick="calcTip()">CALCULATE!</button>
+          <button type="button" id="calculate" onClick="calcTip()">CALCULATE!</button>
         </form>
-        <div id="">
-          TIP AMOUNT
-        </div>
+        <div class="message"></div>
     </div>
   </body>
 </html>
